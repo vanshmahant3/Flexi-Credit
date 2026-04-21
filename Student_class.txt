@@ -1,0 +1,25 @@
+class Student extends Person {
+    String prn;
+    int year;
+    String section;
+    int semester;
+    double gpa;
+
+    Student(String name, int age, String prn, int year, String section, int semester, double gpa) {
+        super(name, age);
+        this.prn = prn;
+        this.year = year;
+        this.section = section;
+        this.semester = semester;
+        this.gpa = gpa;
+    }
+
+    void displayStudent() {
+        displayPerson();
+        System.out.println("PRN: " + prn);
+        System.out.println("Year: " + year);
+        System.out.println("Section: " + section);
+        System.out.println("Semester: " + semester);
+        System.out.println("GPA: " + gpa);
+    }
+}

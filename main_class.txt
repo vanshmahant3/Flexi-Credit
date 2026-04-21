@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+
+        GraduateStudent s1 = new GraduateStudent(
+                "Parth",
+                20,
+                "SIT2025001",
+                2,
+                "A",
+                4,
+                8.7,
+                "Cybersecurity",
+                "B.Tech"
+        );
+
+        System.out.println("------ Student Details ------");
+        s1.displayGraduateStudent();
+    }
+}

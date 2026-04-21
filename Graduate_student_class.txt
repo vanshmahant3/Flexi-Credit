@@ -1,0 +1,19 @@
+
+class GraduateStudent extends Student {
+    String specialization;
+    String degree;
+
+    GraduateStudent(String name, int age, String prn, int year, String section,
+                    int semester, double gpa, String specialization, String degree) {
+
+        super(name, age, prn, year, section, semester, gpa);
+        this.specialization = specialization;
+        this.degree = degree;
+    }
+
+    void displayGraduateStudent() {
+        displayStudent();
+        System.out.println("Specialization: " + specialization);
+        System.out.println("Degree: " + degree);
+    }
+}
